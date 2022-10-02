@@ -11,6 +11,3 @@ def generate_random_restaurant ():
     restaurant_list = ["The Brass", "O'Kelly's Bar & Grill", "Camille's", "Apple Bees", "Buffalo Wild Wings", "Los Paleminos", "Olive Garden", "Starlite", "Max & Emily's", "Jersey Mike's", "Freddie's", "IHOP", "CMU Dining Hall", "Menna's Joint", "Pizza Hut"]
     random_restaurant = random.choice(restaurant_list)
     print(random_restaurant)
-
-generate_random_destination()
-generate_random_restaurant()
