@@ -28,8 +28,11 @@ def display_full_trip (random_destination_pick, random_restaurant_pick, random_t
         print(f"Mode of Transportation: {random_transit_pick}")
         print(f"Form of Entertainment: {random_entertainment_pick}")
 
-random_destination_pick = generate_random_destination(destination_list)
-random_restaurant_pick = generate_random_restaurant(restaurant_list)
-random_transit_pick = generate_random_transit(list_of_transit)
-random_entertainment_pick = generate_random_entertainment(entertainment_list)
-display_full_trip(random_destination_pick, random_restaurant_pick, random_transit_pick, random_entertainment_pick)
+def run ():
+    random_destination_pick = generate_random_destination(destination_list)
+    random_restaurant_pick = generate_random_restaurant(restaurant_list)
+    random_transit_pick = generate_random_transit(list_of_transit)
+    random_entertainment_pick = generate_random_entertainment(entertainment_list)
+    display_full_trip(random_destination_pick, random_restaurant_pick, random_transit_pick, random_entertainment_pick)
+
+run()
