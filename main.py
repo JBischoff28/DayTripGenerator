@@ -1,22 +1,35 @@
 import time
 import random
 
+destination_list = ["Newport, RI", "Nashville, TN", "San Diego, CA", "Seattle, WA", "Chicago, IL", "The Bahamas", "Miami, FL", "The Grand Caynon", "Las Vegas, NE", "Scottsdale, AR", "Colorado Springs, CO", "Outter Banks, NC", "Charleston, SC"]
+restaurant_list = ["The Brass", "O'Kelly's Bar & Grill", "Camille's", "Apple Bees", "Buffalo Wild Wings", "Los Paleminos", "Olive Garden", "Starlite", "Max & Emily's", "Jersey Mike's", "Freddie's", "IHOP", "CMU Dining Hall", "Menna's Joint", "Pizza Hut"]
+list_of_transit = ["Bicycle", "Car", "Sports Car", "Public Bus", "Taxi", "Uber", "Skateboard", "Segway", "Moped", "Motorcycle", "Rollerskates", "Trolley", "Walking", "Boat"]
+entertainment_list = ["Concert", "Beach Walk", "Comedy Show", "Mansion Tour", "Shopping", "Beach Volleyball", "Night Club", "Music Festival", "Haunted House", "NBA Game", "Sailing", "Paragliding", "NFL Game", "NHL Game"]
 
-def generate_random_destination ():
-    destination_list = ["Newport, RI", "Nashville, TN", "San Diego, CA", "Seattle, WA", "Chicago, IL", "The Bahamas", "Miami, FL", "The Grand Caynon", "Las Vegas, NE", "Scottsdale, AR", "Colorado Springs, CO", "Outter Banks, NC", "Charleston, SC"]
+def generate_random_destination (destination_list):
     random_destination = random.choice(destination_list)
-    print(random_destination)
+    return random_destination
 
-def generate_random_restaurant ():
-    restaurant_list = ["The Brass", "O'Kelly's Bar & Grill", "Camille's", "Apple Bees", "Buffalo Wild Wings", "Los Paleminos", "Olive Garden", "Starlite", "Max & Emily's", "Jersey Mike's", "Freddie's", "IHOP", "CMU Dining Hall", "Menna's Joint", "Pizza Hut"]
+def generate_random_restaurant (restaurant_list):
     random_restaurant = random.choice(restaurant_list)
-    print(random_restaurant)
+    return random_restaurant
 
-def generate_random_transit ():
-    modes_of_transit = ["Bicycle", "Car", "Sports Car", "Public Bus", "Taxi", "Uber", "Skateboard", "Segway", "Moped", "Motorcycle", "Rollerskates", "Trolley", "Walking", "Boat"]
-    random_transit = random.choice(modes_of_transit)
-    print(random_transit)
+def generate_random_transit (list_of_transit):
+    random_transit = random.choice(list_of_transit)
+    return random_transit
 
-generate_random_destination()
-generate_random_restaurant()
-generate_random_transit()
+def generate_random_entertainment (entertainment_list):
+    random_entertainment = random.choice(entertainment_list)
+    return random_entertainment
+
+def display_full_trip (random_destination_pick, random_restaurant_pick, random_transit_pick, random_entertainment_pick):
+        print(f"Destination: {random_destination_pick}")
+        print(f"Restaurant: {random_restaurant_pick}")
+        print(f"Mode of Transportation: {random_transit_pick}")
+        print(f"Form of Entertainment: {random_entertainment_pick}")
+
+random_destination_pick = generate_random_destination(destination_list)
+random_restaurant_pick = generate_random_restaurant(restaurant_list)
+random_transit_pick = generate_random_transit(list_of_transit)
+random_entertainment_pick = generate_random_entertainment(entertainment_list)
+display_full_trip(random_destination_pick, random_restaurant_pick, random_transit_pick, random_entertainment_pick)
