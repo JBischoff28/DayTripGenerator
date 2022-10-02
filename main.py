@@ -16,3 +16,7 @@ def generate_random_transit ():
     modes_of_transit = ["Bicycle", "Car", "Sports Car", "Public Bus", "Taxi", "Uber", "Skateboard", "Segway", "Moped", "Motorcycle", "Rollerskates", "Trolley", "Walking", "Boat"]
     random_transit = random.choice(modes_of_transit)
     print(random_transit)
+
+generate_random_destination()
+generate_random_restaurant()
+generate_random_transit()
