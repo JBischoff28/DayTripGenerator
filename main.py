@@ -11,3 +11,8 @@ def generate_random_restaurant ():
     restaurant_list = ["The Brass", "O'Kelly's Bar & Grill", "Camille's", "Apple Bees", "Buffalo Wild Wings", "Los Paleminos", "Olive Garden", "Starlite", "Max & Emily's", "Jersey Mike's", "Freddie's", "IHOP", "CMU Dining Hall", "Menna's Joint", "Pizza Hut"]
     random_restaurant = random.choice(restaurant_list)
     print(random_restaurant)
+
+def generate_random_transit ():
+    modes_of_transit = ["Bicycle", "Car", "Sports Car", "Public Bus", "Taxi", "Uber", "Skateboard", "Segway", "Moped", "Motorcycle", "Rollerskates", "Trolley", "Walking", "Boat"]
+    random_transit = random.choice(modes_of_transit)
+    print(random_transit)
