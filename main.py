@@ -28,11 +28,23 @@ def display_full_trip (random_destination_pick, random_restaurant_pick, random_t
         print(f"Mode of Transportation: {random_transit_pick}")
         print(f"Form of Entertainment: {random_entertainment_pick}")
 
+def check_user_satisfaction ():
+    user_satisfaction = input("Are you happy with your trip?:\n")
+    if user_satisfaction == 'Y' or 'y':
+        print("Awesome! Have a safe trip!")
+        re_select = False
+    elif user_satisfaction == 'N' or 'n':
+        print("Standby while I generate a new trip.")
+        re_select != False
+
+
+
 def run ():
     random_destination_pick = generate_random_destination(destination_list)
     random_restaurant_pick = generate_random_restaurant(restaurant_list)
     random_transit_pick = generate_random_transit(list_of_transit)
     random_entertainment_pick = generate_random_entertainment(entertainment_list)
     display_full_trip(random_destination_pick, random_restaurant_pick, random_transit_pick, random_entertainment_pick)
+    check_user_satisfaction ()
 
 run()
